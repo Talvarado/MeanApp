@@ -1,0 +1,29 @@
+<div class="jumbotron text-center">
+	<h1>Teky Alverado</h1>
+
+	<p>{{ tagline }}</p>
+	<br><br>
+	<h2> Education </h2>
+	<div ng-repeat="edu in eduObjects">
+    <h3>{{edu.degree}}</h3>
+		<h4>{{edu.school}}</h4>
+		<div ng-repeat="course in edu.courses">
+			{{course}}
+		</div>
+  </div>
+	<p></p>
+	<br><br>
+	<h2> Skills </h2>
+	<div ng-repeat="skill in skillObjects">
+    <p>{{skill.name}}    {{skill.rating}} /10</p>
+  </div>
+	<p></p>
+	<br><br>
+	<h2> Projects </h2>
+	<div ng-repeat="proj in projObjects">
+    <h3>{{proj.name}}</h3>
+		<p>{{proj.description}} </p>
+  </div>
+	<p></p>
+	<br><br>
+</div>
